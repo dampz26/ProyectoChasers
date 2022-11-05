@@ -83,6 +83,10 @@ body {
     margin-bottom: -30px;
 }
 
+.texto-base-sc {
+    color: #F7C873;
+}
+
 .section-texto h2 {
     justify-content: center;
     font-family: 'Bebas Neue', cursive;
@@ -92,6 +96,17 @@ body {
 }
 
 .parrafo {
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    font-weight: 300;
+    width: 560px;
+    height: auto;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.parrafo-base {
     display: flex;
     justify-self: center;
     text-align: center;
@@ -192,4 +207,19 @@ body {
     align-self: center;
     width: 80px;
     height: 80px;
+}
+
+@media (max-width: 640px) {
+    .logo {
+       display: block; 
+       width: 300px;
+    }
+
+    .title {
+        font-size: larger;    
+    }
+
+    .subtitle {
+        font-size: medium;
+    }
 }
