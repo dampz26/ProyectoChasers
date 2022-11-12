@@ -47,10 +47,33 @@ body {
 .links-menu li {
     margin-inline: 20px;
     align-self: center;
+    list-style-type: none;
 }
 
 .links-menu li a{
     color: black;
+    text-decoration: none;
+}
+
+.toggle-menu {
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    margin-right: 6px;
+    height: 40px;
+    width: 40px;
+}
+
+.toggle-menu .bar{
+    align-items: center;
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    border-radius: 4px;
 }
 
 .redes img {
@@ -120,8 +143,8 @@ body {
 }
 
 .boton-sign-up:hover {
-    height: 70px;
-    width: 220px;
+    height: 60px;
+    width: 210px;
     background-color: #F7C873;
     border: 1px;
     border-radius: 10px;
@@ -156,6 +179,19 @@ body {
         height: 160px;
     }
 
+
+    .body {
+        background-image: url(../assets/Fondo\ Pagina\ WEB.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center; 
+        background-repeat: no-repeat;
+        margin: 0;
+        font-family: 'Oswald', sans-serif;;
+        color: black;
+        background-color: #464646;
+    }
+
     .barra-navegacion {
         height: auto;
         display: block;
@@ -173,8 +209,13 @@ body {
         padding-left: 0px;
     }
 
-    .links-menu li{
+    .links-menu li {
         align-self: center;
+        list-style-type: none;
+    }
+
+    .links-menu li a {
+        text-decoration: none;
     }
 
 
@@ -183,8 +224,7 @@ body {
         align-self: center;
     }
 
-
-   .toggle-menu {
+    .toggle-menu {
         display: flex;
    }
 
@@ -192,16 +232,49 @@ body {
         display: none;
    } 
 
+   .landing {
+        height: auto;
+   }
+
     .texto-base-sc {
         color: #F7C873;
     }
 
+    .section-texto {
+        width: auto;
+    }
+
+    .section-texto h1{
+        width: auto;
+        margin-top: 30px;
+        margin-bottom: -30px;
+        font-size: 60px;
+    }
+
+    .section-texto h2{
+        width: auto;
+        margin-top: 25px;
+        line-height: 34px;
+    }
+    
     .title {
         font-size: larger;    
     }
 
     .subtitle {
         font-size: medium;
+    }
+
+    .parrafo {
+        width: auto;
+        font-size: 20px;
+        margin-inline: 20px;
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .parrafo p{
+        width: auto;
     }
 
 }
