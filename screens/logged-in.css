@@ -29,6 +29,7 @@ body {
     padding-bottom: 5px;
     margin-bottom: 15px;
     position: fixed;
+    z-index: 10;
     -webkit-box-shadow: 0px 4px 5px 0px rgba(247,200,115,0.4);
     -moz-box-shadow: 0px 4px 5px 0px rgba(247,200,115,0.4);
     box-shadow: 0px 4px 5px 0px rgba(247,200,115,0.4);
@@ -188,12 +189,26 @@ body {
 }
 
 .container-base {
+    padding: 2px;
     display: flex;
     justify-content: space-around;
     background-color: #ffae00;
 }
 
 .container-base img{
+    height: 650px;
+    width: 100%;
+}
+
+.container-image{
+    height: 650px;
+    width: 100%;
+    padding: 4px;
+}
+
+#map {
+    box-sizing: border-box;
+    padding: 5px;
     height: 650px;
     width: 100%;
 }
