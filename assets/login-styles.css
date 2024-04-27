@@ -209,6 +209,7 @@ body {
    }
 
     .links-menu {
+        display: none;
         flex-direction: column;
         padding-left: 0px;
     }
