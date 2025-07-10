@@ -1,0 +1,248 @@
+body {
+    background-image: url(../assets/background-page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container-form {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+    width: 450px;
+    margin-bottom: 0px;
+    justify-self: center;
+    display: none;
+}
+
+.links-menu {
+    display: flex;
+    font-size: medium;
+}
+
+.links-menu li {
+    list-style-type: none;
+    margin-inline: 20px;
+    align-self: center;
+}
+
+.links-menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+.toggle-menu {
+    position: absolute;
+    right: 0px;
+    top: 65px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    margin-right: 6px;
+    height: 40px;
+    width: 40px;
+}
+
+.toggle-menu .bar{
+    align-items: center;
+    width: 30px;
+    height: 10px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.title-pass-reset {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #FAEBCD;
+    font-size: 30px;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.subtitle-pass-reset {
+    color: #FAEBCD;
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 32px;
+    text-align: center;
+
+}
+
+.emailicon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAEBCD;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: #FAEBCD;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 25px;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.primary-button {
+    background-color: #F7C873;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.primary-button:hover {
+    background-color: #D6E6F2;
+    color: black;
+}
+
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+.forgot-password {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+.forgot-password a {
+    font-size: 18px;
+    color: #D6E6F2;
+    text-align: center;
+}
+
+.forgot-password a:hover {
+    color: #F7C873;
+    font-size: 18px;
+    text-align: center;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+}
+
+.back-button a{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.back-button a:hover {
+    color: #ffae00;
+}
+
+
+@media (max-width: 640px) {
+    .logo {
+        display: block; 
+        align-items: center;
+        width: 190px;
+        height: 160px;
+    }
+
+
+    .barra-navegacion {
+        height: auto;
+        display: block;
+        align-items: flex-start;
+    }
+
+    .menu {
+        display: none;
+        justify-content: center;
+        padding-left: 0px;
+   }
+
+    .links-menu {
+        display: none;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .links-menu li{
+        align-self: center;
+    }
+
+
+   .links-menu.active{
+        display: flex;
+        align-self: center;
+    }
+
+
+   .toggle-menu {
+        display: flex;
+   }
+
+   .redes {
+        display: none;
+   } 
+
+    .texto-base-sc {
+        color: #F7C873;
+    }
+
+    .title {
+        font-size: larger;    
+    }
+
+    .subtitle {
+        font-size: medium;
+    }
+}
+    

@@ -1,0 +1,113 @@
+<!-- HTML del acordeón -->
+<div class="accordion" id="aboutAccordion">
+  <div class="accordion-item">
+    <button class="accordion-header">¿Qué es Chasers? <span class="accordion-arrow">▶</span></button>
+    <div class="accordion-panel">
+      <p>Chasers se concibe con la idea de ser una aplicación/juego con verdadera interacción social y realidad aumentada, como un juego con propósito en el cual no vas detrás de objetivos inexistentes que no importan en la vida real, más bien con recompensas tangibles que puedes disfrutar fuera del mundo virtual.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">Nuestra Filosofía <span class="accordion-arrow">▶</span></button>
+    <div class="accordion-panel">
+      <p>No pretendemos entregar una inmersión que nos aleje de la realidad y nos lleve a vivir mundos virtuales que no son reales. Pensamos firmemente en las palabras "Ninguna aventura de la imaginación tiene más valor literario que el más insignificante episodio de la vida cotidiana" como premisa de la vida misma.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">Impacto Social <span class="accordion-arrow">▶</span></button>
+    <div class="accordion-panel">
+      <p>En Chasers donaremos el 6% de las ganancias obtenidas a fundaciones o iniciativas sociales de caridad para los más necesitados. Cada chaser participa directa o indirectamente aportando un granito de arena para hacer el mundo real mejor.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">¿Por qué existimos? <span class="accordion-arrow">▶</span></button>
+    <div class="accordion-panel">
+      <p>Chasers es el sueño de un niño que quiere hacer que la rutina no consuma nuestras vidas y que es más valioso encontrar belleza en esta vida real y en querer vivirla.</p>
+    </div>
+  </div>
+</div>
+
+/* CSS del acordeón (about-accordion.css) */
+.accordion {
+  background-color: #F7C873;
+  color: #002F6C;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 12px;
+  margin: 24px auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 16px rgba(0,47,108,0.07);
+  overflow: hidden;
+}
+
+.accordion-item + .accordion-item {
+  border-top: 2px solid #FAEBCD;
+}
+
+.accordion-header {
+  background: #FAEBCD;
+  color: #002F6C;
+  cursor: pointer;
+  padding: 20px 32px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: background 0.2s;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-header:hover, .accordion-header.active {
+  background: #ffae00;
+  color: #cb2026;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s;
+}
+
+.accordion-header.active .accordion-arrow {
+  transform: rotate(90deg);
+}
+
+.accordion-panel {
+  background: white;
+  color: #002F6C;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+  padding: 0 32px;
+}
+
+.accordion-panel.open {
+  padding: 20px 32px;
+  max-height: 400px;
+}
+
+@media (max-width: 600px) {
+  .accordion {
+    max-width: 98vw;
+    margin: 12px auto;
+  }
+  .accordion-header, .accordion-panel {
+    padding: 14px 10px;
+    font-size: 1.1rem;
+  }
+}
+
+// Script JS para el acordeón
+<script>
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', function() {
+    const panel = this.nextElementSibling;
+    const isOpen = panel.classList.contains('open');
+    document.querySelectorAll('.accordion-panel').forEach(p => p.classList.remove('open'));
+    document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+    if (!isOpen) {
+      panel.classList.add('open');
+      this.classList.add('active');
+    }
+  });
+});
+</script>

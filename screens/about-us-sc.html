@@ -11,22 +11,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Chaserscol</title>
 </head>
-<body>
+<body class="body-about">
     <divclass= class="landing">
         <nav class="barra-navegacion">
 
             <div class="logo">
-                <a href="./index.html"><img src="../assets/Black_and_White_Framed_Kessey_Dj_Logo__1_-removebg-preview.png" alt="Chasers-negro" class="logo-main"></a>
+                <a href="./index.html"><img src="../assets/logos/logo-update.png" alt="Chasers-negro" class="logo-main"></a>
             </div>
 
         
             <div class="texto-base-sc">
                 <ul class="links-menu">
                     <li><a href="./base.html">Map</a></li>
-                    <li><a href="./events.html">Events</a></li>
+                    <li><a href="./events.html">Contact</a></li>
                     <li><a href="./store-sc.html">Shop</a></li>
                     <li><a href="https://api.whatsapp.com/send?phone=573057736680&text=%20Hola%2C%20Quiero%20escribirte%20respecto%20a%20Chasers%20%3A%E2%9C%8D%EF%B8%8F">Escribenos</a></li>
-                    <li><a href="https://vaki.co/es/">Donate</a></li>
+                    <li><a href="https://buymeacoffee.com/jose_daloma">Donate</a></li>
                 </ul> 
              </div>
             
@@ -46,26 +46,68 @@
 
     <div class= 'section-texto'>
 
-        <h1 class="texto-base-sc"> 
-            ¿Que es Chasers? 
+        <h1 class="about-title"> 
+            This isn’t just a game. <br>
+This is my way of saying: I’m still moving. I’m still dreaming. I’m still chasing. 
         </h1>
 
      </div>
-     
-     <div class="parrafo-base">
-        <p>
-            Chasers se concibe con la idea de ser una aplicación/juego con verdadera interacción social y realidad aumentada, como un juego con proposito en el cual no vas detras de objetivos inexistentes que no importan en la vida real, más bien con recompensas tangibles que puedes disfrutar fuera del mundo virtual. <br><br>
 
-            Entre tantas propuestas tan efímeras y vacias que se encuentran en nuestro día a día que nos consumen y cada vez nos causan más ansiedad e inseguridades, robandonos no solo tiempo sino también salud mental sin darnos nada útil a cambio en su mayoria de veces. <br><br>
+     <div class="parrafos-tres-columnas">
+  <div class="columna">
+    <p>
+        My name is José. <br>
+        Earlier this year, I left everything behind and began a roadtrip across the United States. <br>
+        My dream was simple: to see the world, to visit my brother on the other coast, and to feel free. <br>
+        I didn’t have much money — just a car, a backpack, and a head full of ideas. <br> <br>
+        
+        But the journey got harder. <br>
+        I ran out of money. <br>
+        My visa is about to expire. <br>
+        And right now, I’m living in my car in Philadelphia — not by plan, but by necessity. <br>
+        Still, I’ve never felt more alive. <br> <br></p>
+    </p>
+  </div>
+  <div class="columna">
+    <p>
+        I could have given up. But instead, I asked myself: <br>
+        What if this became something bigger? <br>
+        What if the end of my roadtrip became the start of someone else’s? <br> <br>
+        
+        That’s how I created IYFIYKI — If You Find It, You Keep It. <br>
+        A real-life game. A car hidden in the world. A story behind every clue. <br> <br>
+    </p>
+  </div>
+  <div class="columna">
+    <p>
+        And this isn’t just any car. It’s my car. My house. <br>
+        The same car that carried me through cities, doubts, silence, and hope. <br>
+        Now, it’s a prize. <br>
+        If you solve the clues and find it, you win it. It becomes yours. <br> <br>
 
-            No pretendemos entregar una inmersión que nos aleje de la realidad y nos lleve a vivir mundos virtuales que no son reales, pensamos firmemente en las palabras "Ninguna aventura de la imaginación tiene más valor literario que el más insignificante episodio de la vida cotidiana" no solo como valor literario si no como premisa de la vida misma. <br><br>
-            
-            Chasers es el sueño de un niño que quiere hacer que la rutina no consuma nuestras vidas y que es más valioso encontrar belleza en esta vida real y en querer vivirla. <br>
-            En chasers donaremos el 6% de ganancias obtenidas a fundaciones o inciativas sociales de caridad para los más necesitados, por lo tanto cada chaser participa directa o indirectamente aportando un granito de arena para hacer el mundo real mejor. <br><br>
-        </p>
-    </div>
 
-    </div>
+This whole game is my application. <br> <br> 
+    </p>
+  </div>
+</div>
+</div>
+
+    <link rel="stylesheet" href="../assets/about-accordion.css">
     <script src="../misc/script.js"></script>
+    <script>
+    // Simple accordion logic
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', function() {
+        const panel = this.nextElementSibling;
+        const isOpen = panel.classList.contains('open');
+        document.querySelectorAll('.accordion-panel').forEach(p => p.classList.remove('open'));
+        document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+        if (!isOpen) {
+          panel.classList.add('open');
+          this.classList.add('active');
+        }
+      });
+    });
+    </script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+/* Accordion styles for About Us, using Chasers color palette */
+.accordion {
+  background-color: #F7C873;
+  color: #002F6C;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 12px;
+  margin: 24px auto;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 4px 16px rgba(0,47,108,0.07);
+  overflow: hidden;
+}
+
+.accordion-item + .accordion-item {
+  border-top: 2px solid #FAEBCD;
+}
+
+.accordion-header {
+  background: #FAEBCD;
+  color: #002F6C;
+  cursor: pointer;
+  padding: 20px 32px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  transition: background 0.2s;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion-header:hover, .accordion-header.active {
+  background: #ffae00;
+  color: #cb2026;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s;
+}
+
+.accordion-header.active .accordion-arrow {
+  transform: rotate(90deg);
+}
+
+.accordion-panel {
+  background: white;
+  color: #002F6C;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1);
+  padding: 0 32px;
+}
+
+.accordion-panel.open {
+  padding: 20px 32px;
+  max-height: 400px;
+}
+
+@media (max-width: 600px) {
+  .accordion {
+    max-width: 98vw;
+    margin: 12px auto;
+  }
+  .accordion-header, .accordion-panel {
+    padding: 14px 10px;
+    font-size: 1.1rem;
+  }
+}
