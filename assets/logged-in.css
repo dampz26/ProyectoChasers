@@ -29,7 +29,7 @@ body {
 }
 
 .body-about{
-    background-image: url(../assets/aboutbg.png);
+    background-image: url(../assets/aboutbg2.png);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -332,16 +332,69 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 40px auto 40px auto;
-    background-color: #e6b8000a;
-    border-radius: 44px;
+    
 }
 
 .parrafos-tres-columnas .columna {
   flex: 1;
   min-width: 0;
+  min-height: 320px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 10px;
   text-align: center;
   font-family: oswald sans-serif;
+  background: rgba(255,255,255,0.32);
+  border-radius: 44px;
+  border: 1.5px solid rgba(255,255,255,0.35);
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s, background 0.3s, color 0.3s, border 0.3s;
+  color: #222;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.parrafos-tres-columnas .columna:nth-child(1):hover {
+  box-shadow: 0 8px 32px 0 #F7C873cc, 0 2px 16px 0 rgba(0,0,0,0.13);
+}
+.parrafos-tres-columnas .columna:nth-child(2):hover {
+  box-shadow: 0 8px 32px 0 #002f6ccc, 0 2px 16px 0 rgba(0,0,0,0.13);
+}
+.parrafos-tres-columnas .columna:nth-child(3):hover {
+  box-shadow: 0 8px 32px 0 #e34a4ecc, 0 2px 16px 0 rgba(0,0,0,0.13);
+}
+
+.parrafos-tres-columnas .columna:hover {
+  transform: scale(1.06);
+  background: rgba(255,255,255,0.45);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.30), 0 2px 16px 0 rgba(0,0,0,0.13);
+  border: 2.5px solid rgba(255,255,255,0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #111;
+}
+
+.parrafos-tres-columnas .columna:hover * {
+  color: #111 !important;
+  text-shadow: 0 1px 8px rgba(255,255,255,0.4);
+}
+
+.parrafos-tres-columnas .columna:hover {
+  transform: scale(1.06);
+  background: rgba(255,255,255,0.45);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.30), 0 2px 16px 0 rgba(0,0,0,0.13);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  color: #111;
+}
+
+.parrafos-tres-columnas .columna:hover * {
+  color: #111 !important;
+  text-shadow: 0 1px 8px rgba(255,255,255,0.4);
 }
 
 @media (max-width: 900px) {
